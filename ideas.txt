@@ -1,5 +1,0 @@
-Paleta de colores:
--#789BE0 - azul
--#2C2C2C - negro
--#FFFFFF - Blanco
--#E6E6E6 - Blanco con tonos de gris
