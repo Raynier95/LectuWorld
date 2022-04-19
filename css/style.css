@@ -245,6 +245,40 @@ body{
         width: 250px;
         height: 250px;
     }
+    /* addings anims of menu */
+  .main-menu__item {
+    position: relative;
+    cursor: pointer;
+    padding: 1.5rem 0;
+    overflow: hidden;
+    margin: 2rem;
+  }
+  
+  .main-menu__item::before,
+  .main-menu__item::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #789BE0;
+    transition: transform 0.2s;
+  }
+  
+  .main-menu__item::before {
+    top: 15px;
+    transform: translateX(-100%);
+  }
+  
+  .main-menu__item::after {
+    bottom: 15px;
+    transform: translateX(100%);
+  }
+  
+  .main-menu__item:hover::before,
+  .main-menu__item:hover::after {
+    transform: translateX(0);
+  }
 }
 /* Media Querys of menu */
 @media screen and (min-width: 700px) {
