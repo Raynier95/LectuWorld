@@ -107,21 +107,16 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
-.button{
-    display: inline-block;
-    padding-top: 1rem;
-    width: 60%;
-    background-color: #fff;
-    color: #2c2c2c;
-    border-radius: 20px;
-    padding: .7rem;
-    text-decoration: none;
-    margin-top: 1.4rem;
-}
 .cta-reading{
     color: #789BE0;
     text-decoration: none;
     font-size: 1.2rem;
+    display: inline-block;
+    width: 60%;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: .7rem;
+    margin-top: 1.4rem;
 }
 .wave{
     height: 100px;
@@ -179,11 +174,12 @@ body{
     color: #fff;
 }
 .img-reading{
-    width: 250px;
-    height: 200px;
+    width: 220px;
+    height: 280px;
     border-radius: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     margin: 1rem;
+    cursor: pointer;
 }
 /* Footer area */
 .footer{
@@ -238,12 +234,25 @@ body{
         display: grid;
         grid-template-columns: repeat(2,1fr);
     }
+    /* Effect of button */
+    .cta-reading{
+        transition: outline, background-color, color, .7s;
+    }
+    .cta-reading:hover{
+        outline: 1px solid white;
+        background-color: transparent;
+        color: white;
+    }
     .container__head{
         margin-top: 4.5rem;
     }
     .img-content{
         width: 250px;
         height: 250px;
+    }
+    /* Image of desktop */
+    .img-reading{
+        height: 315px;
     }
     /* addings anims of menu */
   .main-menu__item {
